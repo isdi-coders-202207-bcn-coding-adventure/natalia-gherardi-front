@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
-}
-
-li {
-  list-style: none;
+  background-color: #243342;
+  font-family: oxanium;
+  color: #ebedec;
 }
