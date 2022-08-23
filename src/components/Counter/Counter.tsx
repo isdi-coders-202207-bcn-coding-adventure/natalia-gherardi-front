@@ -1,4 +1,4 @@
-import { CounterStyled } from "./ConterStyled";
+import CounterStyled from "./ConterStyled";
 
 const Counter = (): JSX.Element => {
   return (

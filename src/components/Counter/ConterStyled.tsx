@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CounterStyled = styled.ul`
+const CounterStyled = styled.ul`
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -28,8 +28,4 @@ export const CounterStyled = styled.ul`
   }
 `;
 
-export const StyledLi = styled.li``;
-
-export const StyledNumberDiv = styled.div``;
-
-export const StyledWord = styled.span``;
+export default CounterStyled;
