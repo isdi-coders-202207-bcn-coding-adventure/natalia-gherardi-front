@@ -9,8 +9,9 @@ interface CounterProps {
   };
 }
 
-const Counter = ({ time }: CounterProps): JSX.Element => {
-  const { daysLeft, hoursLeft, minutesLeft, secondsLeft } = time;
+const Counter = ({
+  time: { daysLeft, hoursLeft, minutesLeft, secondsLeft },
+}: CounterProps): JSX.Element => {
   return (
     <CounterStyled>
       <li className="counter__item">
