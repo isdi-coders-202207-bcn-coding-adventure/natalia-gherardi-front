@@ -1,27 +1,32 @@
-import calculateTime from "../../utils/calculateTime";
 import CounterStyled from "./ConterStyled";
 
-const date = new Date("aug 21, 2022 9:31:00 GMT");
+interface CounterProps {
+  time: {
+    daysLeft: number;
+    hoursLeft: number;
+    minutesLeft: number;
+    secondsLeft: number;
+  };
+}
 
-calculateTime(date);
-
-const Counter = (): JSX.Element => {
+const Counter = ({ time }: CounterProps): JSX.Element => {
+  const { daysLeft, hoursLeft, minutesLeft, secondsLeft } = time;
   return (
     <CounterStyled>
       <li className="counter__item">
-        <div className="counter__time">02</div>
+        <div className="counter__time">{daysLeft}</div>
         <span className="counter__description">days</span>
       </li>
       <li className="counter__item">
-        <div className="counter__time">20</div>
+        <div className="counter__time">{hoursLeft}</div>
         <span className="counter__description">hours</span>
       </li>
       <li className="counter__item">
-        <div className="counter__time">34</div>
+        <div className="counter__time">{minutesLeft}</div>
         <span className="counter__description">minutes</span>
       </li>
       <li className="counter__item">
-        <div className="counter__time">09</div>
+        <div className="counter__time">{secondsLeft}</div>
         <span className="counter__description">seconds</span>
       </li>
     </CounterStyled>
