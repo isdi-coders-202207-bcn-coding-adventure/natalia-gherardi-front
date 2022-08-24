@@ -1,4 +1,9 @@
+import calculateTime from "../../utils/calculateTime";
 import CounterStyled from "./ConterStyled";
+
+const date = new Date("aug 21, 2022 9:31:00 GMT");
+
+calculateTime(date);
 
 const Counter = (): JSX.Element => {
   return (
