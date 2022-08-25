@@ -1,6 +1,6 @@
 import CounterStyled from "./ConterStyled";
 
-interface CounterProps {
+export interface CounterProps {
   time: {
     daysLeft: number;
     hoursLeft: number;
@@ -9,7 +9,7 @@ interface CounterProps {
   };
 }
 
-const Counter = ({
+export const Counter = ({
   time: { daysLeft, hoursLeft, minutesLeft, secondsLeft },
 }: CounterProps): JSX.Element => {
   return (
@@ -33,5 +33,3 @@ const Counter = ({
     </CounterStyled>
   );
 };
-
-export default Counter;
