@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Header from "../Header/Header";
-import Counter from "../Counter/Counter";
 import calculateTime from "../../utils/calculateTime";
 import { useState } from "react";
+import { Counter } from "../Counter/Counter";
 
 const deadLine = new Date("aug 25, 2022 00:00:00 GMT+2");
 
