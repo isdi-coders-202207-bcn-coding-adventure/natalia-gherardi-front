@@ -4,7 +4,7 @@ import calculateTime from "../../utils/calculateTime";
 import { useState } from "react";
 import { Counter } from "../Counter/Counter";
 
-const deadLine = new Date("aug 25, 2022 00:00:00 GMT+2");
+const deadLine = new Date("sep 17, 2022 00:00:00 GMT+2");
 
 const StyledContainer = styled.div`
   margin: 0 auto;
